@@ -1,0 +1,65 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  // font-family: "Open Sans Condensed", sans-serif;
+  // font-family: 'Neucha', cursive;
+  // font-family: 'Waiting for the Sunrise', cursive;
+
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased !important;
+}
+.title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $primary;
+  position: relative;
+  letter-spacing: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -6px;
+    background: $primary;
+    width: 30px;
+    height: 3px;
+  }
+}
+
+.subtitle {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4.2rem;
+  line-height: 5rem;
+  color: $font;
+  font-weight: 600;
+}
+
+.para {
+  color: rgba($font, 0.6);
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 1.8rem;
+    &::before {
+      left: -1px;
+      top: -5px;
+      width: 25px;
+      height: 2.5px;
+    }
+  }
+
+  .subtitle {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .para {
+    color: rgba($font, 0.6);
+    font-size: 1.2rem;
+  }
+}

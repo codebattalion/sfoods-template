@@ -1,0 +1,281 @@
+.nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12rem;
+  position: relative;
+  position: fixed;
+  z-index: 999;
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  color: $font;
+  top: 0px;
+  border-bottom: 1px solid rgba($font, 0.1);
+  background: #fff;
+  &--trigger {
+    position: absolute;
+    left: 20px;
+    display: none;
+    & * {
+      font-size: 3rem;
+    }
+  }
+  &__logo {
+    color: inherit;
+    position: relative;
+    &--location {
+      position: absolute;
+      top: 20px;
+      right: -26px;
+      color: $secondary;
+      font-size: 1.2rem;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 600;
+    }
+    & a {
+      font-size: 3rem;
+      font-family: "Waiting for the Sunrise", cursive;
+
+      font-weight: 900;
+      position: relative;
+      padding: 2px 15px;
+      margin-left: 25px;
+      text-decoration: none;
+      color: inherit;
+      text-transform: uppercase;
+      // background-color: $primary;
+    }
+  }
+
+  &__bar {
+    list-style: none;
+    color: inherit;
+    &--list {
+      display: inline;
+      padding: 0 10px;
+    }
+    &--link {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 250px;
+      position: relative;
+      transition: all 0.2s ease-out;
+      background: #fff;
+      &.active-link {
+        transition: all 0.2s ease-out;
+        color: #fff;
+        background: linear-gradient(to right, $primary, $primary-d);
+        box-shadow: 0 12px 18px -10px rgba($primary, 0.56);
+      }
+      &:hover {
+        transition: all 0.2s ease-out;
+        color: #fff;
+        background: linear-gradient(to right, $primary, $primary-d);
+        box-shadow: 0 12px 18px -10px rgba($primary, 0.56);
+      }
+    }
+  }
+
+  &__icons {
+    list-style: none;
+    color: inherit;
+    &__cart {
+      position: relative;
+      margin-right: 10px;
+      &--count {
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 600;
+        top: 0;
+      }
+      &--active {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        background: $secondary;
+        width: 4px;
+        height: 4px;
+        border-radius: 60px;
+      }
+    }
+    &--list {
+      display: inline-block;
+      padding: 0 10px;
+    }
+    & a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.profile-card {
+  height: auto;
+  position: absolute;
+  top: 50px;
+  right: -130px;
+  width: 300px;
+  visibility: hidden;
+  background: white;
+  padding: none !important;
+  color: #333;
+  border: 1px solid #ddd;
+  cursor: default;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+  opacity: 0;
+  box-shadow: 1px 4px 12px rgba($font, 0.2);
+  padding: 100px 30px 30px 30px;
+  &-trigger {
+    display: inline;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    &--user {
+      width: 40px;
+      height: 40px;
+      border-radius: 250px;
+      overflow: hidden;
+      border: 2px solid rgba($font, 0.2);
+      & img {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      & span {
+        position: absolute;
+        right: -135px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgba($primary, 0.9), rgba($primary, 0.9)),
+      url("/img/user/profilecard.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &--name {
+      font-size: 1.4rem;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &--logout {
+      & a {
+        padding: 8px 16px;
+        background: $cream;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 100px;
+      }
+    }
+  }
+  &__body {
+    &--heading {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      margin: 1rem;
+      font-weight: 600;
+    }
+    &__list {
+      display: flex;
+      padding: 5px 10px;
+      justify-content: space-between;
+      align-items: center;
+      &--link {
+        font-size: 1.4rem !important;
+        font-weight: 300;
+        padding: 0 10px;
+        transition: color 0.2s ease-out;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    height: 70px !important;
+    background: #fff !important;
+    padding: 0 120px 0 50px;
+    z-index: 999;
+    color: #333 !important;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    &--trigger {
+      display: block;
+      cursor: pointer;
+    }
+    &__logo {
+      & * {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__bar {
+      transition: all 0.3s ease-out;
+      position: absolute;
+      top: 70px;
+      left: -60%;
+      height: 100vh;
+      background: #fff;
+      box-shadow: 10px 25px 10px 2px rgba(0, 0, 0, 0.08);
+      padding: 35px;
+      &--list {
+        padding: 10px 0;
+        display: block;
+      }
+      &--link {
+        letter-spacing: 2px;
+        display: block;
+        text-align: center;
+        &.active {
+          background: #333;
+          color: #fff;
+        }
+        &:hover {
+          background: #333;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .profile-card {
+    top: 50px;
+    width: 300px;
+    &-trigger {
+      display: inline;
+    }
+  }
+}
+.nav--open {
+  top: 70px;
+  left: 0;
+}
+.profile-card-open {
+  transition: all 0.2s ease-out;
+  border: 1px solid #eeeeee;
+  opacity: 1;
+  visibility: visible;
+}

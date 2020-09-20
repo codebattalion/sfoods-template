@@ -1,0 +1,56 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  &--bg {
+    position: absolute;
+    top: 0px;
+    right: -10%;
+    width: 70%;
+    height: auto;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    &--title {
+      color: $font;
+      font-size: 9rem;
+      font-family: "Neucha", cursive;
+      letter-spacing: 2px;
+      line-height: 9rem;
+    }
+    &--subtitle {
+      margin-left: 10px;
+      margin-top: 20px;
+      font-size: 1.6rem;
+      color: rgba($font, 0.8);
+      font-weight: 600;
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    &__container {
+      top: 45%;
+      width: 90%;
+      &--title {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+      &--subtitle {
+        font-size: 1.5rem;
+        color: rgba($font, 0.9);
+        width: 90%;
+      }
+    }
+  }
+}

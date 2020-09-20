@@ -1,0 +1,36 @@
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 35px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  width: 0;
+  height: 0;
+  margin-right: 20px;
+  font-weight: 600;
+  &.primary {
+    background: linear-gradient(to right, $primary, $primary-d);
+    color: #fff;
+  }
+  &.secondary {
+    background: linear-gradient(to right, $secondary, $secondary-d);
+    color: #fff;
+  }
+  &.white {
+    background: #fff;
+    color: $font;
+  }
+  &.rounded {
+    border-radius: 250px;
+  }
+  &.link {
+    color: $secondary;
+    text-decoration: underline solid $secondary;
+    letter-spacing: 0;
+    padding: 0;
+  }
+}

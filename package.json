@@ -1,0 +1,14 @@
+{
+  "name": "yo",
+  "version": "1.0.0",
+  "description": "this is a startup project by vipan",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "vipan",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
