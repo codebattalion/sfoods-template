@@ -14,17 +14,20 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: $primary;
-  position: relative;
-  letter-spacing: 0;
-  &::before {
-    content: "";
-    position: absolute;
-    left: -2px;
-    top: -6px;
-    background: $primary;
-    width: 30px;
-    height: 3px;
+
+  & span {
+    color: $primary;
+    position: relative;
+    letter-spacing: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -6px;
+      background: $primary;
+      width: 30px;
+      height: 3px;
+    }
   }
 }
 
