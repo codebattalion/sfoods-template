@@ -9,12 +9,11 @@
   position: fixed;
   z-index: 999;
   transition: all 0.3s ease-out;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   top: 0;
   left: 0;
   color: $font;
   top: 0px;
-  border-bottom: 1px solid rgba($font, 0.1);
+  border-bottom: 1px solid rgba($font-l, 0.1);
   background: #fff;
   &--trigger {
     position: absolute;
