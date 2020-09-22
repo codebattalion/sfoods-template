@@ -9,106 +9,256 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    
-  <nav class="nav">
-    <div class="nav--trigger">
-      <ion-icon name="reorder-three-outline"></ion-icon>
-    </div>
-    <div class="nav__logo">
-      <a href="#">Sfoods <span class="nav__logo--location">Patiala</span></a>
-    </div>
+    <nav class="nav">
+      <div class="nav--trigger">
+        <ion-icon name="reorder-three-outline"></ion-icon>
+      </div>
+      <div class="nav__logo">
+        <a href="#">Sfoods <span class="nav__logo--location">Patiala</span></a>
+      </div>
 
-    <div class="nav__bar">
-      <li class="nav__bar--list">
-        <a class="nav__bar--link active-link" href="index.html">Home</a>
-      </li>
+      <div class="nav__bar">
+        <li class="nav__bar--list">
+          <a class="nav__bar--link active-link" href="index.html">Home</a>
+        </li>
 
-      <li class="nav__bar--list">
-        <a class="nav__bar--link" href="#">Order Online</a>
-      </li>
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="#">Order Online</a>
+        </li>
 
-      <li class="nav__bar--list">
-        <a class="nav__bar--link" href="#">Restaurant</a>
-      </li>
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="#">Restaurant</a>
+        </li>
 
-      <li class="nav__bar--list">
-        <a class="nav__bar--link" href="#">Booking</a>
-      </li>
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="#">Booking</a>
+        </li>
 
-      <li class="nav__bar--list">
-        <a class="nav__bar--link" href="#">Contact</a>
-      </li>
-    </div>
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="#">Contact</a>
+        </li>
+      </div>
 
-    <div class="nav__icons">
-      <li class="nav__icons--list">
-        <a class="nav__icons__cart" href="#"
-          ><span class="nav__icons__cart--active"></span>
-          <ion-icon name="cart-outline"></ion-icon>
-          <span class="nav__icons__cart--count">2</span></a
-        >
-      </li>
+      <div class="nav__icons">
+        <li class="nav__icons--list">
+          <a class="nav__icons__cart" href="#"
+            ><span class="nav__icons__cart--active"></span>
+            <ion-icon name="cart-outline"></ion-icon>
+            <span class="nav__icons__cart--count">2</span></a
+          >
+        </li>
 
-      <li class="nav__icons--list">
-        <div class="profile-card-trigger">
-          <div class="profile-card-trigger--user">
-            <img src="./img/user/user.jpg" alt="" />
-            <span
-              >Viphacker <ion-icon name="chevron-down-outline"></ion-icon
-            ></span>
-          </div>
-          <div class="profile-card">
-            <div class="profile-card__bg">
-              <div class="profile-card__bg--name">Viphacker</div>
-              <div class="profile-card__bg--logout">
-                <a href="#">Logout</a>
+        <li class="nav__icons--list">
+          <div class="profile-card-trigger">
+            <div class="profile-card-trigger--user">
+              <img src="./img/user/user.jpg" alt="" />
+              <span
+                >Viphacker <ion-icon name="chevron-down-outline"></ion-icon
+              ></span>
+            </div>
+            <div class="profile-card">
+              <div class="profile-card__bg">
+                <div class="profile-card__bg--name">Viphacker</div>
+                <div class="profile-card__bg--logout">
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+
+              <div class="profile-card__body">
+                <div class="profile-card__body--heading">Activity</div>
+                <div class="profile-card__body__list">
+                  <a href="#" class="profile-card__body__list--link">Posts</a>
+                  <span class="badge primary">12</span>
+                </div>
+                <div class="profile-card__body__list">
+                  <a href="#" class="profile-card__body__list--link">Chat</a>
+                  <span class="badge success">2</span>
+                </div>
+
+                <div class="profile-card__body--heading">My Profile</div>
+                <div class="profile-card__body__list">
+                  <a href="#" class="profile-card__body__list--link"
+                    >Settings</a
+                  >
+                  <span></span>
+                </div>
               </div>
             </div>
+          </div>
+        </li>
+      </div>
+    </nav>
+    <main>
+      <div class="container-xlarge pt-2">
+        <div class="heading">Food Menu</div>
+        <div class="show-cats mt-2">
+          <li><a class="active" href="#">Breakfast</a></li>
+          <li><a class="" href="#">Lunch</a></li>
+          <li><a class="" href="#">Dinner</a></li>
+          <li><a class="" href="#">Shakes</a></li>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="y-over">
+              <div class="foodlist">
+                <div class="foodlist--img">
+                  <img src="/img/foods/1.jpg" alt="" />
+                </div>
+                <div class="foodlist__container">
+                  <div class="foodlist__container--sub">
+                    <h1 href="#" class="foodlist--title">
+                      Cheese Burger Special
+                    </h1>
+                    <div class="foodlist--price">$10</div>
+                  </div>
 
-            <div class="profile-card__body">
-              <div class="profile-card__body--heading">Activity</div>
-              <div class="profile-card__body__list">
-                <a href="#" class="profile-card__body__list--link">Posts</a>
-                <span class="badge primary">12</span>
-              </div>
-              <div class="profile-card__body__list">
-                <a href="#" class="profile-card__body__list--link">Chat</a>
-                <span class="badge success">2</span>
+                  <p class="foodlist--text">
+                    For those who love cheese in burger patty &amp; multiple
+                    flavours
+                  </p>
+                  <div class="foodlist__container--sub">
+                    <a href="#" class="foodlist--link">Show</a>
+                    <div class="foodlist--reviews"><span>20</span> Reviews</div>
+                  </div>
+                </div>
               </div>
 
-              <div class="profile-card__body--heading">My Profile</div>
-              <div class="profile-card__body__list">
-                <a href="#" class="profile-card__body__list--link">Settings</a>
-                <span></span>
+              <div class="foodlist">
+                <div class="foodlist--img">
+                  <img src="/img/foods/2.jpg" alt="" />
+                </div>
+                <div class="foodlist__container">
+                  <div class="foodlist__container--sub">
+                    <h1 href="#" class="foodlist--title">French Fries</h1>
+                    <div class="foodlist--price">$10</div>
+                  </div>
+
+                  <p class="foodlist--text">
+                    Cool french fries with superb crispiness and flavours
+                  </p>
+                  <div class="foodlist__container--sub">
+                    <a href="#" class="foodlist--link">Show</a>
+                    <div class="foodlist--reviews"><span>20</span> Reviews</div>
+                  </div>
+                </div>
               </div>
+
+              <div class="foodlist">
+                <div class="foodlist--img">
+                  <img src="/img/foods/3.jpg" alt="" />
+                </div>
+                <div class="foodlist__container">
+                  <div class="foodlist__container--sub">
+                    <h1 href="#" class="foodlist--title">Cheese Sandwich</h1>
+                    <div class="foodlist--price">$10</div>
+                  </div>
+
+                  <p class="foodlist--text">
+                    For those who love cheese in burger patty &amp; multiple
+                    flavours
+                  </p>
+                  <div class="foodlist__container--sub">
+                    <a href="#" class="foodlist--link">Show</a>
+                    <div class="foodlist--reviews"><span>20</span> Reviews</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="foodlist">
+                <div class="foodlist--img">
+                  <img src="/img/foods/4.jpg" alt="" />
+                </div>
+                <div class="foodlist__container">
+                  <div class="foodlist__container--sub">
+                    <h1 href="#" class="foodlist--title">Cheese Sandwich</h1>
+                    <div class="foodlist--price">$10</div>
+                  </div>
+
+                  <p class="foodlist--text">
+                    For those who love cheese in burger patty &amp; multiple
+                    flavours
+                  </p>
+                  <div class="foodlist__container--sub">
+                    <a href="#" class="foodlist--link">Show</a>
+                    <div class="foodlist--reviews"><span>20</span> Reviews</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="foodlist">
+                <div class="foodlist--img">
+                  <img src="/img/foods/5.jpg" alt="" />
+                </div>
+                <div class="foodlist__container">
+                  <div class="foodlist__container--sub">
+                    <h1 href="#" class="foodlist--title">Cheese Sandwich</h1>
+                    <div class="foodlist--price">$10</div>
+                  </div>
+
+                  <p class="foodlist--text">
+                    For those who love cheese in burger patty &amp; multiple
+                    flavours
+                  </p>
+                  <div class="foodlist__container--sub">
+                    <a href="#" class="foodlist--link">Show</a>
+                    <div class="foodlist--reviews"><span>20</span> Reviews</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="foodlist">
+                <div class="foodlist--img">
+                  <img src="/img/foods/6.jpg" alt="" />
+                </div>
+                <div class="foodlist__container">
+                  <div class="foodlist__container--sub">
+                    <h1 href="#" class="foodlist--title">Cheese Sandwich</h1>
+                    <div class="foodlist--price">$10</div>
+                  </div>
+
+                  <p class="foodlist--text">
+                    For those who love cheese in burger patty &amp; multiple
+                    flavours
+                  </p>
+                  <div class="foodlist__container--sub">
+                    <a href="#" class="foodlist--link">Show</a>
+                    <div class="foodlist--reviews"><span>20</span> Reviews</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="foodlist">
+                <div class="foodlist--img">
+                  <img src="/img/foods/7.jpg" alt="" />
+                </div>
+                <div class="foodlist__container">
+                  <div class="foodlist__container--sub">
+                    <h1 href="#" class="foodlist--title">Cheese Sandwich</h1>
+                    <div class="foodlist--price">$10</div>
+                  </div>
+
+                  <p class="foodlist--text">
+                    For those who love cheese in burger patty &amp; multiple
+                    flavours
+                  </p>
+                  <div class="foodlist__container--sub">
+                    <a href="#" class="foodlist--link">Show</a>
+                    <div class="foodlist--reviews"><span>20</span> Reviews</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Food List ends -->
             </div>
           </div>
-        </div>
-      </li>
-    </div>
-  </nav>
-  <main>
-    <div class="container-fluid pt-2">
-
-      <div class="heading pl-6">Food Menu</div>
-      <div class="show-cats pl-5 mt-2">
-        <li><a class="active" href="#">Breakfast</a></li>
-        <li><a class="" href="#">Lunch</a></li>
-        <li><a class="" href="#">Dinner</a></li>
-        <li><a class="" href="#">Shakes</a></li>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          
-        </div>
-        <div class="col-md-8">
-
+          <div class="col-md-8">
+            <div class="foodlist"></div>
+            <div class="foodlist"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <body>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="/js/custom.js"></script>

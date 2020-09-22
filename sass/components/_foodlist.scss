@@ -1,0 +1,63 @@
+.foodlist {
+  margin: 24px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: rgba($font-l, 0.1);
+    width: 100%;
+    height: 1px;
+    bottom: -12px;
+    left: 0;
+  }
+  &--img {
+    width: 105px;
+    height: auto;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__container {
+    flex: 1;
+    margin-left: 10px;
+    &--sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px;
+    }
+  }
+  &--title {
+    font-family: "Roboto Condensed", sans-serif;
+    color: $font;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  &--text {
+    color: rgba($font, 0.6);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+  }
+  &--link {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $primary;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &--price {
+    font-size: 1.6rem;
+  }
+  &--reviews {
+    color: rgba($font, 0.8);
+    margin-top: 2px;
+    font-size: 1.4rem;
+  }
+}

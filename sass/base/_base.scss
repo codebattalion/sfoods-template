@@ -8,8 +8,13 @@ html {
 }
 body {
   overflow-x: hidden;
-  height: 4000px;
 }
 main {
   margin-top: 80px;
+}
+h1,
+h2,
+p,
+a {
+  cursor: default;
 }

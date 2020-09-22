@@ -9,7 +9,8 @@ html {
 }
 .container,
 .container-fluid,
-.container-large {
+.container-large,
+.container-xlarge {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -39,6 +40,37 @@ html {
 @media (min-width: 1280px) {
   .container-large {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-xlarge {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-xlarge {
+    max-width: 74%;
+  }
+}
+@media (min-width: 992px) {
+  .container-xlarge {
+    max-width: 78%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xlarge {
+    max-width: 82%;
+  }
+}
+@media (min-width: 1280px) {
+  .container-xlarge {
+    max-width: 88%;
+  }
+}
+@media (min-width: 1360px) {
+  .container-xlarge {
+    max-width: 92%;
   }
 }
 @media (min-width: 576px) {
