@@ -1,6 +1,6 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  // font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
+  // font-family: "Roboto Condensed", sans-serif;
   // font-family: 'Neucha', cursive;
   // font-family: 'Waiting for the Sunrise', cursive;
 
@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 .title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
@@ -32,7 +32,7 @@ body {
 }
 
 .subtitle {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 4.2rem;
   line-height: 5rem;
   color: $font;
@@ -44,6 +44,14 @@ body {
   font-size: 1.2rem;
   line-height: 2.4rem;
   font-weight: 600;
+}
+
+.heading {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: $font;
 }
 @media only screen and (max-width: 1024px) {
   .title {
