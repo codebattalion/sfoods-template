@@ -1,0 +1,105 @@
+// AUTH
+
+.auth {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  &--already {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  &__image {
+    width: 30%;
+    height: 100vh;
+    padding: 16rem 10rem;
+    background: linear-gradient(rgba($secondary, 0.8), rgba($secondary, 0.9)),
+      url("/img/auth.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &--para {
+      text-align: center;
+      font-size: 2.8rem;
+      font-family: "Roboto Condensed", sans-serif;
+      line-height: 3.6rem;
+      color: #fff;
+      font-weight: 300;
+    }
+    &--logo {
+      font-family: "Waiting for the Sunrise", cursive;
+      color: #fff;
+      font-size: 8rem;
+      font-weight: 300;
+      position: relative;
+    }
+  }
+  &__body {
+    flex: 1;
+    height: 100vh;
+    padding: 12rem 14rem;
+    & .subheading {
+      font-weight: 900;
+      letter-spacing: 0;
+      font-size: 2.2rem;
+      & span {
+        font-weight: 300;
+      }
+    }
+
+    &__form {
+      padding: 3rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .auth {
+    &__image {
+      width: 20%;
+      padding: 14rem 2rem;
+    }
+    &__body {
+      padding: 18rem 6rem;
+
+      &__form {
+        padding: 2.4rem 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .auth {
+    &--already {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+    &__image {
+      display: none;
+    }
+    &__body {
+      padding: 5rem 3rem;
+      & .heading {
+        margin-bottom: 30px;
+      }
+      &__form {
+        padding: 0;
+        & .form-group {
+          margin-top: 5px !important;
+        }
+      }
+    }
+  }
+  .auth-btns {
+    & a {
+      display: block !important;
+      width: 100%;
+      height: auto;
+      margin: 15px 0;
+    }
+  }
+}

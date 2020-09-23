@@ -1,0 +1,184 @@
+::placeholder {
+  color: $font;
+}
+.form {
+  &-group {
+    margin-top: 20px;
+  }
+  &-group-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    & .form-group {
+      flex: 1;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+    & input {
+      width: 100%;
+    }
+  }
+
+  // &-input {
+  //   position: relative;
+  //   margin-bottom: 10px;
+  //   .input {
+  //     font-size: 14px;
+  //     color: rgba($font, 0.8);
+  //     font-weight: 600;
+  //     padding: 12px 15px;
+  //     border: none;
+  //     background: transparent;
+  //     width: 100%;
+  //     outline: none;
+  //     border-bottom: 2px solid;
+  //     border-color: rgba($secondary, 0.8);
+  //     caret-color: $secondary;
+  //     z-index: 1;
+  //     &:valid {
+  //       // Hides the label
+  //       background: white;
+  //     }
+  //     &:focus {
+  //       border-color: $secondary;
+  //     }
+  //     &:focus + .label {
+  //       top: -22px;
+  //       left: 0;
+  //     }
+  //   }
+
+  //   .label {
+  //     position: absolute;
+  //     top: 12px;
+  //     left: 15px;
+  //     font-size: 12px;
+  //     z-index: -1;
+  //     transition: all 0.15s ease;
+  //     color: $font;
+  //     font-weight: 500;
+  //   }
+  // }
+}
+@media screen and (max-width: 1024px) {
+  .form-group-inline .form-group {
+    margin: 10px 0;
+  }
+
+  .form-group-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.input-group {
+  position: relative;
+}
+
+.input {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  padding: 20px 10px 10px 5px;
+  display: block;
+  width: 100% !important;
+  border: none;
+  border-bottom: 1px solid $font-l;
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: $font;
+  font-size: 16px;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  font-weight: 500;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -10px;
+  font-size: 14px;
+  color: $secondary;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: $secondary;
+  transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* animations */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: $secondary;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: $secondary;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: $secondary;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
