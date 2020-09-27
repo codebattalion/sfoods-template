@@ -1,0 +1,244 @@
+.recipe {
+  display: flex;
+  justify-content: space-between;
+  background: $secondary;
+  height: auto;
+  width: 100%;
+  padding: 0 0 2rem 0;
+
+  position: relative;
+  &--left {
+    width: 60%;
+  }
+  &--right {
+    flex: 1;
+    position: relative;
+  }
+  &__center {
+    width: 60%;
+    &--text {
+      color: rgba($font, 0.8);
+      font-size: 1.4rem;
+      line-height: 2rem;
+      font-weight: 500;
+    }
+    &--container {
+      margin-top: 20px;
+    }
+    &--item {
+      margin-bottom: 20px;
+      & span {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $font-l;
+      }
+      & ion-icon {
+        position: relative;
+        top: 2px;
+        color: $secondary;
+      }
+    }
+  }
+
+  &--breadcrumb {
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 20px;
+    & * {
+      font-size: 1.2rem;
+    }
+    & a {
+      color: rgba(#fff, 0.85);
+      text-decoration: none;
+    }
+    & span {
+      color: #fff;
+    }
+  }
+  &--title {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: #fff;
+    font-weight: 800;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 30px;
+    &--left {
+      display: flex;
+      align-items: center;
+    }
+    &--right {
+      display: flex;
+      align-items: center;
+    }
+    & h2 {
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+    & p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    &--list {
+      padding-right: 20px;
+    }
+    &--rating {
+      font-size: 1.4rem;
+      margin-left: 30px;
+      & p {
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
+      & ion-icon[name="star"] {
+        color: yellow;
+      }
+      & ion-icon[name="star-outline"] {
+        color: #fff;
+      }
+    }
+
+    &--icons {
+      text-align: center;
+      margin-right: 20px;
+      & p {
+        font-size: 1.2rem;
+      }
+      & a {
+        text-decoration: none;
+        color: #fff;
+      }
+      & ion-icon {
+        background: rgba($secondary-d, 0.4);
+        border-radius: 250px;
+        padding: 8px;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &--img {
+    width: 60%;
+    height: 100%;
+    margin-left: 60px;
+    position: relative;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__incredients {
+    position: absolute;
+    top: 320px;
+    left: 0px;
+    background: $cream-new;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 2.5rem;
+    &--title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: $font;
+    }
+    &--container {
+      margin-top: 10px;
+    }
+    &--list {
+      margin-bottom: 10px;
+      & ion-icon {
+        background: $primary;
+        padding: 3px;
+        font-size: 1rem;
+        border-radius: 200px;
+        color: #fff;
+      }
+      span {
+        font-family: "Roboto Condensed", sans-serif;
+        position: relative;
+        top: -4px;
+        font-size: 1.4rem;
+        color: $font-l;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .recipe {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    &--left {
+      width: 100%;
+    }
+    &--right {
+      flex: none;
+      width: 100%;
+    }
+    &__center {
+      width: 100%;
+    }
+    &--breadcrumb {
+      padding-left: 0;
+    }
+    &--title {
+      margin-left: 0px;
+      font-size: 3.8rem;
+      width: 100%;
+      line-height: 4.4rem;
+    }
+    &__details {
+      margin-left: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      &--right {
+        flex-direction: column;
+      }
+
+      &--list {
+        padding-right: 10px;
+        text-align: center;
+      }
+      &--rating {
+        font-size: 1.2rem;
+        margin-left: 0px;
+      }
+
+      &--icons {
+        text-align: center;
+        margin-right: 10px;
+        & ion-icon {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &--img {
+      position: relative;
+      top: 5px;
+      width: 100%;
+      height: 100%;
+      margin-left: 0px;
+      margin-top: 10px;
+      position: relative;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__incredients {
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      width: 100%;
+    }
+  }
+}

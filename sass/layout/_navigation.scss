@@ -11,10 +11,10 @@
   transition: all 0.3s ease-out;
   top: 0;
   left: 0;
-  color: $font;
+  color: #fff;
+  background: $secondary;
   top: 0px;
-  border-bottom: 1px solid rgba($font-l, 0.1);
-  background: #fff;
+
   &--trigger {
     position: absolute;
     left: 20px;
@@ -55,7 +55,7 @@
     color: inherit;
     &--list {
       display: inline;
-      padding: 0 10px;
+      margin: 0 10px;
     }
     &--link {
       color: inherit;
@@ -63,23 +63,24 @@
       font-size: 1.1rem;
       text-transform: uppercase;
       font-weight: 700;
-      padding: 6px 12px;
+      padding: 0px 12px;
       border-radius: 250px;
       letter-spacing: 1px;
       position: relative;
       transition: all 0.2s ease-out;
-      background: #fff;
       &.active-link {
         transition: all 0.2s ease-out;
-        color: #fff;
-        background: linear-gradient(to right, $primary, $primary-d);
-        box-shadow: 0 12px 18px -10px rgba($primary, 0.56);
+        color: $secondary;
+        padding: 6px 12px;
+        background: #fff;
+        box-shadow: 0 12px 18px -10px rgba($font, 0.4);
       }
       &:hover {
         transition: all 0.2s ease-out;
-        color: #fff;
-        background: linear-gradient(to right, $primary, $primary-d);
-        box-shadow: 0 12px 18px -10px rgba($primary, 0.56);
+        color: $secondary;
+        padding: 6px 12px;
+        background: #fff;
+        box-shadow: 0 12px 18px -10px rgba($font, 0.4);
       }
     }
   }
@@ -216,12 +217,9 @@
 
 @media only screen and (max-width: 1024px) {
   .nav {
-    height: 70px !important;
-    background: #fff !important;
+    background: $secondary !important;
     padding: 0 120px 0 50px;
     z-index: 999;
-    color: #333 !important;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
     &--trigger {
       display: block;
       cursor: pointer;
@@ -249,12 +247,21 @@
         letter-spacing: 2px;
         display: block;
         text-align: center;
+        box-shadow: none !important;
+        padding: 6px 12px;
+        color: $font;
+        border-radius: 0;
         &.active {
-          background: #333;
+          background: $secondary;
+          padding: 6px 12px;
           color: #fff;
+          box-shadow: none !important;
         }
         &:hover {
-          background: #333;
+          background: $secondary;
+          padding: 6px 12px;
+          box-shadow: none !important;
+
           color: #fff;
         }
       }
