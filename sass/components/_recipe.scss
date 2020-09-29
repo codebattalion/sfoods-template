@@ -115,7 +115,7 @@
         color: #fff;
       }
       & ion-icon {
-        background: rgba($secondary-d, 0.4);
+        background: rgba(#fff, 0.15);
         border-radius: 250px;
         padding: 8px;
         font-size: 1.8rem;
@@ -152,11 +152,12 @@
     &--list {
       margin-bottom: 10px;
       & ion-icon {
-        background: $primary;
+        background: rgba($primary, 0.1);
         padding: 3px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         border-radius: 200px;
-        color: #fff;
+        color: $primary-d;
+        margin-right: 2px;
       }
       span {
         font-family: "Roboto Condensed", sans-serif;

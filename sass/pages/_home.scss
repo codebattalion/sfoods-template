@@ -13,7 +13,6 @@
   }
 }
 
-
 .show-cats {
   height: 36px;
   width: 100%;
@@ -38,6 +37,8 @@
 }
 @media only screen and (max-width: 1024px) {
   .section-show {
+    clip-path: polygon(50% 1%, 100% 0, 100% 100%, 0 100%, 0 0);
+
     & .section-show--flex {
       display: block;
     }

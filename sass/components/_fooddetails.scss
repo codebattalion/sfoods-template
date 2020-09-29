@@ -145,3 +145,15 @@
     cursor: pointer;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .food-details {
+    display: none;
+  }
+  .food-alternate {
+    display: none;
+  }
+  .food-suggest {
+    display: none;
+  }
+}
