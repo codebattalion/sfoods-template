@@ -91,138 +91,113 @@
       </div>
     </nav>
     <main>
-      <div class="recipe">
-        <div class="recipe--left">
-          <div class="container-xlarge">
-            <div class="recipe--breadcrumb">
-              <a href="recipes.html">Recipes</a> >
-              <span>Spring Rolls with Noodles</span>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Recipes</span>
+      </div>
+      <div class="container-large mt-4">
+        <div class="row">
+          <div class="col-md-3">
+            <!-- Recipe Filter type -->
+            <div class="recipes-fil__type">
+              <h1 class="recipes-fil--title mb-2">Types</h1>
+              <!-- Recipe Filter Type List -->
+              <button
+                class="recipes-fil__type--list recipes-fil__type--list-veg"
+              >
+                Veg Only
+              </button>
+              <button
+                class="recipes-fil__type--list recipes-fil__type--list-non"
+              >
+                Non Veg
+              </button>
+              <button
+                class="recipes-fil__type--list recipes-fil__type--list-egg"
+              >
+                Plus Eggs
+              </button>
             </div>
-            <div class="recipe--title">Spring Rolls with Noodles</div>
-            <div class="recipe__details">
-              <div class="recipe__details--left">
-                <div class="recipe__details--list">
-                  <h2>Total Time</h2>
-                  <p>30 min</p>
-                </div>
-                <div class="recipe__details--list">
-                  <h2>Prep Time</h2>
-                  <p>20 min</p>
-                </div>
-                <div class="recipe__details--list">
-                  <h2>Chill Time</h2>
-                  <p>0 min</p>
-                </div>
-                <div class="recipe__details--list">
-                  <h2>Cook Time</h2>
-                  <p>10 min</p>
-                </div>
-                <div class="recipe__details--rating">
-                  <p>4 reviews</p>
 
-                  <div>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
+            <!-- Recipe Filter Categories -->
+            <div class="recipes-fil__cat">
+              <h1 class="recipes-fil--title mb-2">Categories</h1>
+              <!-- Recipe Filter Categories List -->
+              <div class="recipes-fil__cat--list">
+                <a href="#">Breakfast</a>
+              </div>
+              <div class="recipes-fil__cat--list">
+                <a href="#">Lunch</a>
+              </div>
+              <div class="recipes-fil__cat--list">
+                <a href="#">Fastfood</a>
+              </div>
+              <div class="recipes-fil__cat--list">
+                <a href="#">Beverages</a>
+              </div>
+              <div class="recipes-fil__cat--list">
+                <a href="#">Soups</a>
+              </div>
+              <div class="recipes-fil__cat--list">
+                <a href="#">Salads</a>
+              </div>
+              <div class="recipes-fil__cat--list">
+                <a href="#">Desserts</a>
+              </div>
+              <div class="recipes-fil__cat--list">
+                <a href="#">Breads</a>
+              </div>
+            </div>
+          </div>
+          <!-- RECIPES -->
+          <div class="col-md-9">
+            <div class="row">
+              <!-- Recipe number 1 -->
+              <div class="col-md-4">
+                <div class="recipes">
+                  <div class="recipes--img">
+                    <img src="/img/foods/1.jpg" alt="" />
+                  </div>
+                  <div class="recipes__body">
+                    <div class="recipes--title">Veg Cheese Burger</div>
+                    <div class="recipes__body__desc">
+                      <div class="recipes__body__desc--cat">Fastfood</div>
+                      <div class="recipes__body__desc--time">20 Min</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="recipe__details--right">
-                <div class="recipe__details--icons">
-                  <a href="#"><ion-icon name="share-social"></ion-icon></a>
-                  <p>share</p>
-                </div>
-                <div class="recipe__details--icons">
-                  <a href="#"><ion-icon name="print"></ion-icon></a>
-                  <p>print</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="recipe--right">
-          <div class="recipe--img">
-            <img src="/img/foods/8.jpg" alt="" />
-            <div class="recipe__incredients">
-              <div class="recipe__incredients--title">Incredients</div>
-              <div class="recipe__incredients--container">
-                <div class="recipe__incredients--list">
-                  <ion-icon name="checkmark"></ion-icon>
-                  <span>260gm Refined Flour</span>
-                </div>
-                <div class="recipe__incredients--list">
-                  <ion-icon name="checkmark"></ion-icon>
-                  <span>250gm Noodles</span>
-                </div>
-                <div class="recipe__incredients--list">
-                  <ion-icon name="checkmark"></ion-icon>
-                  <span>2tsp salt</span>
-                </div>
-                <div class="recipe__incredients--list">
-                  <ion-icon name="checkmark"></ion-icon>
-                  <span>2tsp Soy Souce</span>
+              <!-- Recipe number 2 -->
+              <div class="col-md-4">
+                <div class="recipes">
+                  <div class="recipes--img">
+                    <img src="/img/foods/5.jpg" alt="" />
+                  </div>
+                  <div class="recipes__body">
+                    <div class="recipes--title">Specolta Salad</div>
+                    <div class="recipes__body__desc">
+                      <div class="recipes__body__desc--cat">Salads</div>
+                      <div class="recipes__body__desc--time">50 Min</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe__center">
-        <div class="container-xlarge">
-          <div class="recipe__center--text mt-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-            voluptatem repudiandae aut nisi architecto ducimus! Soluta mollitia,
-            ipsa maxime dicta dolorum, ratione similique quaerat recusandae,
-            illum voluptates impedit unde veritatis olor sit amet consectetur
-            adipisicing elit. Possimus voluptatem repudiandae aut nisi
-            architecto ducimus! Soluta mollitia, ipsa maxime dicta dolorum,
-            ratione similique quaerat recusandae, illum voluptates impedit unde
-            verita.
-          </div>
-          <div class="recipe__center--container">
-            <div class="subtitle mb-4">Steps to Make</div>
-            <div class="recipe__center--item">
-              <ion-icon name="ellipse"></ion-icon>
-              <span
-                >Take a teaspoon of salt and mix that in the luke water and use
-                container to mix it up together to make a paste.</span
-              >
-            </div>
-            <div class="recipe__center--item">
-              <ion-icon name="ellipse"></ion-icon>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia aliquam, nisi deleniti dolor rerum vel quam labore iste
-                necessitatibus. Accusamus ab fugiat quod sunt voluptatibus
-                eveniet, doloremque quasi perspiciatis explicabo.</span
-              >
-            </div>
-            <div class="recipe__center--item">
-              <ion-icon name="ellipse"></ion-icon>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia aliquam, nisi deleniti dolor rerum vel quam labore iste
-                necessiexplicabo.</span
-              >
-            </div>
-            <div class="recipe__center--item">
-              <ion-icon name="ellipse"></ion-icon>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia aliquam, nisi deleniti dolor rerum vel quam labore iste
-                necessiexplicabo.</span
-              >
-            </div>
-            <div class="recipe__center--item">
-              <ion-icon name="ellipse"></ion-icon>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia aliquam, nisi deleniti dolor rerum vel quam labore iste
-                necessiexplicabo.</span
-              >
+
+              <!-- Recipe number 3 -->
+              <div class="col-md-4">
+                <div class="recipes">
+                  <div class="recipes--img">
+                    <img src="/img/foods/3.jpg" alt="" />
+                  </div>
+                  <div class="recipes__body">
+                    <div class="recipes--title">Veg Grilled Sandwich</div>
+                    <div class="recipes__body__desc">
+                      <div class="recipes__body__desc--cat">Fastfood</div>
+                      <div class="recipes__body__desc--time">30 Min</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
