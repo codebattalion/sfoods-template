@@ -1,7 +1,6 @@
 .y-over {
   height: 80vh; /*..very important if you want scroll bar...*/
   overflow: auto; /*..will introduce scroll bar when needed..*/
-  padding-left: 40px;
 }
 .y-over::-webkit-scrollbar {
   width: 4px;
