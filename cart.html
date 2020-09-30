@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav--trigger">
+        <ion-icon name="reorder-three-outline"></ion-icon>
+      </div>
+      <div class="nav__logo">
+        <a href="#">Sfoods <span class="nav__logo--location">Patiala</span></a>
+      </div>
+
+      <div class="nav__bar">
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="foods.html">Order Online</a>
+        </li>
+
+        <li class="nav__bar--list">
+          <a class="nav__bar--link active-link" href="recipes.html">Recipes</a>
+        </li>
+
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="booking.html">Booking</a>
+        </li>
+
+        <li class="nav__bar--list">
+          <a class="nav__bar--link" href="contact.html">Contact</a>
+        </li>
+      </div>
+
+      <div class="nav__icons">
+        <li class="nav__icons--list">
+          <a class="nav__icons__add" href="addrecipe.html">
+            <ion-icon name="add"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__icons--list">
+          <a class="nav__icons__cart" href="cart.html"
+            ><span class="nav__icons__cart--active"></span>
+            <ion-icon name="cart-outline"></ion-icon>
+            <span class="nav__icons__cart--count">2</span></a
+          >
+        </li>
+
+        <li class="nav__icons--list">
+          <div class="profile-card-trigger">
+            <div class="profile-card-trigger--user">
+              <img src="./img/user/user.jpg" alt="" />
+              <span
+                >Viphacker <ion-icon name="chevron-down-outline"></ion-icon
+              ></span>
+            </div>
+            <div class="profile-card">
+              <div class="profile-card__bg">
+                <div class="profile-card__bg--name">Viphacker</div>
+                <div class="profile-card__bg--logout">
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+
+              <div class="profile-card__body">
+                <div class="profile-card__body--heading">Activity</div>
+                <div class="profile-card__body__list">
+                  <a href="#" class="profile-card__body__list--link"
+                    >Transactions</a
+                  >
+                  <span class="badge primary">12</span>
+                </div>
+                <div class="profile-card__body__list">
+                  <a href="#" class="profile-card__body__list--link">Chat</a>
+                  <span class="badge success">2</span>
+                </div>
+
+                <div class="profile-card__body--heading">My Profile</div>
+                <div class="profile-card__body__list">
+                  <a href="#" class="profile-card__body__list--link"
+                    >Settings</a
+                  >
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+    </nav>
+
+    <!-- --------MAIN-------- -->
+    <main>
+      <div class="container-xlarge">
+        <div class="subtitle pt-3">Shopping Cart</div>
+        <!-- breadcrumb -->
+        <div class="breadcrumb pt-2">
+          <a href="index.html">Home</a> > <span>Cart</span>
+        </div>
+      </div>
+      <div class="bg-white">
+        <div class="container-xlarge">
+          <div class="row">
+            <div class="col-md-8 mt-3">
+              <!-- Cart Item -->
+              <div class="cart">
+                <div class="cart-left">
+                  <div class="cart-left__img">
+                    <img src="/img/foods/4.jpg" alt="" />
+                  </div>
+                  <div class="cart-left__body">
+                    <div class="cart-left__body--title">Pizza Farm italian</div>
+                    <div class="cart-left__body--person">Serves: 2 person</div>
+                  </div>
+                </div>
+                <div class="cart-center">
+                  <div class="cart-center--quantity">
+                    <span>1 Serve</span>
+                  </div>
+                </div>
+                <div class="cart-right">
+                  <div class="cart-right--left">
+                    <div class="cart-right--price">$30</div>
+                    <div class="cart-right--discount">$4.99 Discount</div>
+                  </div>
+                  <div class="cart-right--right">
+                    <a href="#" class="cart-right--x">x</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cart Item -->
+              <div class="cart">
+                <div class="cart-left">
+                  <div class="cart-left__img">
+                    <img src="/img/foods/3.jpg" alt="" />
+                  </div>
+                  <div class="cart-left__body">
+                    <div class="cart-left__body--title">
+                      Veg Grilled Sandwich
+                    </div>
+                    <div class="cart-left__body--person">Serves: 1 person</div>
+                  </div>
+                </div>
+                <div class="cart-center">
+                  <div class="cart-center--quantity">
+                    <span>2 Serve</span>
+                  </div>
+                </div>
+                <div class="cart-right">
+                  <div class="cart-right--left">
+                    <div class="cart-right--price">$45</div>
+                    <div class="cart-right--discount">$5.00 Discount</div>
+                  </div>
+                  <div class="cart-right--right">
+                    <a href="#" class="cart-right--x">x</a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right mr-5">
+                <div class="heading">Total</div>
+                <div class="subtitle">$75</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <form>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="input" type="text" required />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Card Number</label>
+                  </div>
+                </div>
+                <div class="form-group-inline">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="input" type="text" required />
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>EXP</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="input" type="text" required />
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>CVV Code</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="input" type="text" required />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Card holder Name</label>
+                  </div>
+                </div>
+                <!-- button -->
+                <div class="mt-3">
+                  <button class="btn secondary">Checkout</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/custom.js"></script>
+  </body>
+</html>

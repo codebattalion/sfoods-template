@@ -31,22 +31,22 @@
         </li>
 
         <li class="nav__bar--list">
-          <a class="nav__bar--link" href="#">Booking</a>
+          <a class="nav__bar--link" href="booking.html">Booking</a>
         </li>
 
         <li class="nav__bar--list">
-          <a class="nav__bar--link" href="#">Contact</a>
+          <a class="nav__bar--link" href="contact.html">Contact</a>
         </li>
       </div>
 
       <div class="nav__icons">
         <li class="nav__icons--list">
-          <a class="nav__icons__add" href="#">
+          <a class="nav__icons__add" href="addrecipe.html">
             <ion-icon name="add"></ion-icon>
           </a>
         </li>
         <li class="nav__icons--list">
-          <a class="nav__icons__cart" href="#"
+          <a class="nav__icons__cart" href="cart.html"
             ><span class="nav__icons__cart--active"></span>
             <ion-icon name="cart-outline"></ion-icon>
             <span class="nav__icons__cart--count">2</span></a
@@ -99,232 +99,253 @@
     <!-- --------MAIN-------- -->
     <main>
       <div class="container-xlarge mt-4">
-        <div class="breadcrumb">
+        <div class="subtitle pt-3">Recipes</div>
+        <div class="breadcrumb pt-2">
           <a href="index.html">Home</a> > <span>Recipes</span>
         </div>
-        <div class="row">
-          <div class="col-md-3">
-            <!-- Recipe Filter Search -->
-            <div class="recipes-fil__search">
-              <h1 class="recipes-fil--title mb-2">Search</h1>
+      </div>
+      <div class="bg-white pt-3">
+        <div class="container-xlarge">
+          <div class="row">
+            <div class="col-md-3">
+              <!-- Recipe Filter Search -->
+              <div class="recipes-fil__search">
+                <h1 class="recipes-fil--title mb-2">Search</h1>
 
-              <input type="text" placeholder="Type to Search" />
+                <input type="text" placeholder="Type to Search" />
+              </div>
+
+              <!-- Recipe Filter type -->
+              <div class="recipes-fil__type">
+                <h1 class="recipes-fil--title mb-2">Types</h1>
+                <!-- Recipe Filter Type List -->
+                <button
+                  class="recipes-fil__type--list recipes-fil__type--list-veg"
+                >
+                  Veg Only
+                </button>
+                <button
+                  class="recipes-fil__type--list recipes-fil__type--list-non"
+                >
+                  Non Veg
+                </button>
+                <button
+                  class="recipes-fil__type--list recipes-fil__type--list-egg"
+                >
+                  Plus Eggs
+                </button>
+              </div>
+
+              <!-- Recipe Filter Categories -->
+              <div class="recipes-fil__cat">
+                <h1 class="recipes-fil--title mb-2">Categories</h1>
+                <!-- Recipe Filter Categories List -->
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Breakfast</a>
+                </div>
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Lunch</a>
+                </div>
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Fastfood</a>
+                </div>
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Beverages</a>
+                </div>
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Soups</a>
+                </div>
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Salads</a>
+                </div>
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Desserts</a>
+                </div>
+                <div class="recipes-fil__cat--list">
+                  <a href="#">Breads</a>
+                </div>
+              </div>
             </div>
+            <!-- RECIPES -->
+            <div class="col-md-9">
+              <div class="row">
+                <!-- Recipe number 1 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="recipe.html">+</a>
+                      </div>
+                      <img src="/img/foods/1.jpg" alt="" />
+                    </div>
+                    <div class="recipes__body">
+                      <a href="recipe.html" class="recipes--title"
+                        >Veg Cheese Burger</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">20 Min</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <!-- Recipe Filter type -->
-            <div class="recipes-fil__type">
-              <h1 class="recipes-fil--title mb-2">Types</h1>
-              <!-- Recipe Filter Type List -->
-              <button
-                class="recipes-fil__type--list recipes-fil__type--list-veg"
-              >
-                Veg Only
-              </button>
-              <button
-                class="recipes-fil__type--list recipes-fil__type--list-non"
-              >
-                Non Veg
-              </button>
-              <button
-                class="recipes-fil__type--list recipes-fil__type--list-egg"
-              >
-                Plus Eggs
-              </button>
-            </div>
+                <!-- Recipe number 2 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/5.jpg" alt="" />
+                    </div>
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title">Specolta Salad</a>
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Salads</div>
+                        <div class="recipes__body__desc--time">50 Min</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <!-- Recipe Filter Categories -->
-            <div class="recipes-fil__cat">
-              <h1 class="recipes-fil--title mb-2">Categories</h1>
-              <!-- Recipe Filter Categories List -->
-              <div class="recipes-fil__cat--list">
-                <a href="#">Breakfast</a>
-              </div>
-              <div class="recipes-fil__cat--list">
-                <a href="#">Lunch</a>
-              </div>
-              <div class="recipes-fil__cat--list">
-                <a href="#">Fastfood</a>
-              </div>
-              <div class="recipes-fil__cat--list">
-                <a href="#">Beverages</a>
-              </div>
-              <div class="recipes-fil__cat--list">
-                <a href="#">Soups</a>
-              </div>
-              <div class="recipes-fil__cat--list">
-                <a href="#">Salads</a>
-              </div>
-              <div class="recipes-fil__cat--list">
-                <a href="#">Desserts</a>
-              </div>
-              <div class="recipes-fil__cat--list">
-                <a href="#">Breads</a>
-              </div>
-            </div>
-          </div>
-          <!-- RECIPES -->
-          <div class="col-md-9">
-            <div class="row">
-              <!-- Recipe number 1 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
+                <!-- Recipe number 3 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/3.jpg" alt="" />
                     </div>
-                    <img src="/img/foods/1.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Cheese Burger</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">20 Min</div>
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title"
+                        >Veg Grilled Sandwich</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">30 Min</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <!-- Recipe number 2 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
+                <!-- Recipe number 3 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/3.jpg" alt="" />
                     </div>
-                    <img src="/img/foods/5.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Specolta Salad</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Salads</div>
-                      <div class="recipes__body__desc--time">50 Min</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Recipe number 3 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
-                    </div>
-                    <img src="/img/foods/3.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Grilled Sandwich</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">30 Min</div>
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title"
+                        >Veg Grilled Sandwich</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">30 Min</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Recipe number 3 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
+                <!-- Recipe number 3 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/3.jpg" alt="" />
                     </div>
-                    <img src="/img/foods/3.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Grilled Sandwich</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">30 Min</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Recipe number 3 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
-                    </div>
-                    <img src="/img/foods/3.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Grilled Sandwich</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">30 Min</div>
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title"
+                        >Veg Grilled Sandwich</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">30 Min</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Recipe number 3 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
+                <!-- Recipe number 3 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/3.jpg" alt="" />
                     </div>
-                    <img src="/img/foods/3.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Grilled Sandwich</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">30 Min</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Recipe number 3 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
-                    </div>
-                    <img src="/img/foods/3.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Grilled Sandwich</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">30 Min</div>
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title"
+                        >Veg Grilled Sandwich</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">30 Min</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Recipe number 3 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
+                <!-- Recipe number 3 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/3.jpg" alt="" />
                     </div>
-                    <img src="/img/foods/3.jpg" alt="" />
-                  </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Grilled Sandwich</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">30 Min</div>
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title"
+                        >Veg Grilled Sandwich</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">30 Min</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Recipe number 3 -->
-              <div class="col-md-4">
-                <div class="recipes">
-                  <div class="recipes--img">
-                    <div class="recipes--img--link">
-                      <a href="#">+</a>
+                <!-- Recipe number 3 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/3.jpg" alt="" />
                     </div>
-                    <img src="/img/foods/3.jpg" alt="" />
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title"
+                        >Veg Grilled Sandwich</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">30 Min</div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="recipes__body">
-                    <a href="#" class="recipes--title">Veg Grilled Sandwich</a>
-                    <div class="recipes__body__desc">
-                      <div class="recipes__body__desc--cat">Fastfood</div>
-                      <div class="recipes__body__desc--time">30 Min</div>
+                </div>
+                <!-- Recipe number 3 -->
+                <div class="col-md-4">
+                  <div class="recipes">
+                    <div class="recipes--img">
+                      <div class="recipes--img--link">
+                        <a href="#">+</a>
+                      </div>
+                      <img src="/img/foods/3.jpg" alt="" />
+                    </div>
+                    <div class="recipes__body">
+                      <a href="#" class="recipes--title"
+                        >Veg Grilled Sandwich</a
+                      >
+                      <div class="recipes__body__desc">
+                        <div class="recipes__body__desc--cat">Fastfood</div>
+                        <div class="recipes__body__desc--time">30 Min</div>
+                      </div>
                     </div>
                   </div>
                 </div>

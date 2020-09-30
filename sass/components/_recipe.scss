@@ -177,6 +177,7 @@
   overflow: hidden;
   border: 1px solid #eee;
   margin-bottom: 3rem;
+
   &-fil {
     &--title {
       font-size: 1.6rem;
@@ -185,6 +186,7 @@
     }
     &__search {
       border: 1px solid #eee;
+      background: #fff;
       padding: 3rem 2rem;
       & input {
         border: 2px solid $font-l;
@@ -195,6 +197,7 @@
     }
     &__cat {
       border: 1px solid #eee;
+      background: #fff;
       padding: 3rem 2rem;
       &--list {
         border: 1px solid $cream-new;
@@ -213,6 +216,7 @@
     }
     &__type {
       border: 1px solid #eee;
+      background: #fff;
       padding: 3rem 2rem;
       &--list {
         margin-bottom: 1rem;
@@ -242,15 +246,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 49%;
+      top: 48.5%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 3rem;
+
       & a {
         color: #fff;
         text-decoration: none;
+        font-size: 5rem;
+        font-weight: 200;
       }
-      background: rgba($font, 0.9);
+      background: linear-gradient(
+        to right,
+        rgba($secondary, 0.8),
+        rgba($third, 0.8)
+      );
       width: 100%;
       height: 100%;
       opacity: 0;
@@ -289,7 +299,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 600;
-    color: $secondary;
+    color: $font;
   }
 }
 
